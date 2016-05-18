@@ -24,7 +24,7 @@ public class Persona {
 		return cedulaidentidad; 
 	}
 	
-	public void cedulaidentidad(String cedulaidentidad){
+	public void set_cedulaidentidad(String cedulaidentidad){
 		this.cedulaidentidad =  cedulaidentidad; 
 	}
 	
