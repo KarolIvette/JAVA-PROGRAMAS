@@ -51,4 +51,22 @@ public class calculadora {
 		JOptionPane.showMessageDialog(null, "LA RAIZ CUADRADA DE : "
 		+Float.toString(num)+" es = "+Float.toString(raiz));
 	}
+	
+	public void seno(float num){
+		float seno = (float) Math.sin(Math.toRadians(num));
+		JOptionPane.showMessageDialog(null, "EL SENO DE : "
+		+Float.toString(num)+" es = "+Float.toString(seno));
+	}
+	
+	public void coseno(float num){
+		float coseno = (float) Math.cos(Math.toRadians(num));
+		JOptionPane.showMessageDialog(null, "EL COSENO DE : "
+		+Float.toString(num)+" es = "+Float.toString(coseno));
+	}
+	
+	public void tangente(float num){
+		float tangente = (float) Math.tan(Math.toRadians(num));
+		JOptionPane.showMessageDialog(null, "LA TANGENTE DE : "
+		+Float.toString(num)+" es = "+Float.toString(tangente));
+	}
 }

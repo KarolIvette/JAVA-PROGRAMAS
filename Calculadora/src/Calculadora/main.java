@@ -19,5 +19,14 @@ public class main {
 		
 		cal.raizcuadrada(cal.get_num1());
 		cal.raizcuadrada(cal.get_num2());
+		
+		cal.seno(cal.get_num1());
+		cal.seno(cal.get_num2());
+		
+		cal.coseno(cal.get_num1());
+		cal.coseno(cal.get_num2());
+		
+		cal.tangente(cal.get_num1());
+		cal.tangente(cal.get_num2());
 	}
 }
