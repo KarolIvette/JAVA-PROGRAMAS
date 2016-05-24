@@ -5,11 +5,10 @@ import AplicacionDescanso.Vacaciones;
 
 public class main {
 	public static void main(String[] args) {
-		int vacaciones, semana;
-		vacaciones = JOptionPane.OK_OPTION;
-		semana = JOptionPane.OK_OPTION;
+		int vacaciones=0, semana=0;
+		Vacaciones descanso;
 		
-		Vacaciones apl = new Vacaciones(vacaciones, semana);
-		apl.opciones(vacaciones,semana);
+		descanso = new Vacaciones(vacaciones,semana);
+		descanso.opciones(vacaciones,semana);
 	}
 }

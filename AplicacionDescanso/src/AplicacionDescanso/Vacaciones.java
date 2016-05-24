@@ -4,58 +4,38 @@ import javax.swing.JOptionPane;
 public class Vacaciones {
 	int vacaciones, semana;
 	
-	public Vacaciones(int vac, int sem){
-		this.vacaciones = vac;
-		this.semana = sem;
+	public Vacaciones(int vacaciones, int semana){
+		this.vacaciones = vacaciones;
+		this.semana = semana;
 	}
 	
 	public int get_vac(){
-		return vacaciones; 
+		return this.vacaciones; 
 	}
 	
-	public void set_vac(int vac){
-		this.vacaciones =  vac ; 
+	public void set_vacaciones(int vacaciones){
+		this.vacaciones =  vacaciones; 
 	}
 	
-	public int get_sem(){
-		return vacaciones; 
+	public int get_semana(){
+		return this.semana; 
 	}
 	
-	public void set_sem(int sem){
-		this.semana =  sem ; 
+	public void set_semana(int semana){
+		this.semana =  semana; 
 	}
 	
-	public void opciones(int vac, int sem){
-		int resp;
-		int resp2;
-		resp = JOptionPane.showConfirmDialog(null, "¿ESTAS EN DIA DE SEMANA?");
-		if(JOptionPane.OK_OPTION == resp){
-			boolean r1 = (resp != 0);
-			r1 = true;
-		}
-		else{
-			boolean r1 = (resp == 0);
-			r1 = false;
-		}
-		
-		resp = JOptionPane.showConfirmDialog(null, "¿ESTAS EN VACACIONES?");
-		if(JOptionPane.OK_OPTION == resp){
-			boolean r2 = (resp != 0);
-			r2 = true;
-		}
-		else{
-			boolean r2 = (resp == 0);
-			r2 = false;
-		}
-		
-		boolean r1 = true && false;
-		boolean r2 = true && false;
-		
-		if(r1==false && r2==true){
+	public boolean opciones(int vacaciones, int semana){
+		int resp1, resp2;
+		resp1=JOptionPane.showConfirmDialog(null,"¿ESTAS EN DIA DE SEMANA?");
+		resp2=JOptionPane.showConfirmDialog(null,"ESTAS DE VACACIONES?");
+		if(resp1== 1 && resp2==0){
 			JOptionPane.showMessageDialog(null, "¡PUEDE DESCANSAR!");
+			return true;
 		}
 		else{
 			JOptionPane.showMessageDialog(null, "¡NO PUEDE DESCANSAR!");
+			return false;
 		}
 	}
 }
