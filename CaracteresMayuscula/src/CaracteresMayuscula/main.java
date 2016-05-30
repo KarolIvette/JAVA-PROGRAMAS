@@ -9,8 +9,10 @@ public class main {
 		
 		camb.set_cadena (JOptionPane.showInputDialog("INGRESE LA PALABRA:"));
 		
+		System.gc();
+		
 		JOptionPane.showMessageDialog(null, camb.nueva());
 			
-		System.gc();
+		
 	}	
 }
