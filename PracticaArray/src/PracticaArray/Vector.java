@@ -47,7 +47,7 @@ public class Vector {
 	        }
 	        for(int i = 0;i < arr.length; i++)
 	        {
-	            System.out.print(arr[i]+"\n");
+	            System.out.print(arr[i]+" ");
 	        }
 	 }
 	 
@@ -59,6 +59,6 @@ public class Vector {
 				 s+=arr[i];
 				 p++;
 		 }
-		 System.out.print("EL PROMEDIO ES: " +(s/p));
+		 System.out.print("\nEL PROMEDIO ES: " +(s/p));
 	 }
 }
