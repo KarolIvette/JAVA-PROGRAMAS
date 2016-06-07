@@ -4,7 +4,7 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		int arr[][]={ {1,3,6,7,4,5,2,8} , {11,16,13,10,14,12,15,9} };
+		int arr[][]={ {40,15,20,10,5,25,35,30} , {45,75,55,70,80,65,50,60} };
 		Matriz vec = new Matriz(arr);
 		
 		vec.getMax(arr);
